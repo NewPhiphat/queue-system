@@ -13,4 +13,8 @@ function callQueue(plan) {
     
     // แสดงคิวปัจจุบัน
     document.getElementById(`queue-${plan}`).textContent = `คิวปัจจุบัน: ${queues[plan]}`;
+
+    // เล่นเสียง
+    const audio = document.getElementById('queue-sound');
+    audio.play();
 }
